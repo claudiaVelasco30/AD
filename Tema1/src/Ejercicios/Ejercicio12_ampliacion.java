@@ -9,7 +9,7 @@ import org.w3c.dom.NodeList;
 
 import java.io.File;
 
-public class Ejercicio13 {
+public class Ejercicio12_ampliacion {
 
 	public static void main(String[] args) {
 		LeerXML();
