@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Persona implements Serializable{
 
-	private static final long serialVersionUID = -165217016253432837L;
+	private static final long serialVersionUID = 1L;
 	private StringBuilder nombre;
 	private StringBuilder apellido1;
 	private StringBuilder apellido2;

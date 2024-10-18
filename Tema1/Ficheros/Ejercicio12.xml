@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<personas>
+    <persona>
+        <nombre>Maria</nombre>
+        <apellido1>Sanchez</apellido1>
+        <apellido2>Garcia</apellido2>
+        <nacimiento>Fri Jan 20 00:06:00 CET 2006</nacimiento>
+    </persona>
+    <persona>
+        <nombre>Juan</nombre>
+        <apellido1>Herrero</apellido1>
+        <apellido2>Sanz</apellido2>
+        <nacimiento>Mon Jan 05 00:12:00 CET 2004</nacimiento>
+    </persona>
+</personas>
