@@ -2,7 +2,6 @@ package Ejercicio13_sax;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
 public class Manejador extends DefaultHandler{
