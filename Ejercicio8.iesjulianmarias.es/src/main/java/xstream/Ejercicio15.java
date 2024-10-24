@@ -44,6 +44,12 @@ public class Ejercicio15 {
 			e.printStackTrace();
 		} finally {
 			try {
+				xs.alias("falimia", ListaPersonas.class);
+				xs.alias("persona", Persona.class);
+				xs.addImplicitCollection(ListaPersonas.class, "lista");
+				xs.aliasField("primerApellido", Persona.class, "apellido1");
+				xs.aliasField("segundoApellido", Persona.class, "apellido2");
+				xs.useAttributeFor(Persona.class, "nombre");
 				xs.toXML(lp, new FileOutputStream(Utilidades.RUTA + DOCUMENTO_OUT));
 				ois.close();
 			} catch (IOException e) {

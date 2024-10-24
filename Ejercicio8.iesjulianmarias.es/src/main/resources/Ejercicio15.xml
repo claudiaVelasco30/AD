@@ -1,10 +1,7 @@
-<xstream.ListaPersonas>
-  <lista>
-    <Ejercicios.ejercicio6.Persona>
-      <nombre>Juan</nombre>
-      <apellido1>Sanz</apellido1>
-      <apellido2>Sanz</apellido2>
-      <nacimiento>2002-01-19 23:11:00.0 UTC</nacimiento>
-    </Ejercicios.ejercicio6.Persona>
-  </lista>
-</xstream.ListaPersonas>
+<falimia>
+  <persona nombre="Juan">
+    <primerApellido>Sanz</primerApellido>
+    <segundoApellido>Sanz</segundoApellido>
+    <nacimiento>2002-01-19 23:11:00.0 UTC</nacimiento>
+  </persona>
+</falimia>
