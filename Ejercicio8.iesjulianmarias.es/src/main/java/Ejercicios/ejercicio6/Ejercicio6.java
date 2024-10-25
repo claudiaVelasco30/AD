@@ -20,6 +20,13 @@ public class Ejercicio6 {
 	private static ObjectOutputStream oos;
 	private final static String DOCTRABAJO_IN = "Ejercicio6.txt";
 	
+	public static String getDoctrabajoIn() {
+		return DOCTRABAJO_IN;
+	}
+	public static ObjectOutputStream getoos() {
+		return oos;
+	}
+	
 	public static void main(String[] args) {
 		inicializar();
 		escribirObjeto(obtenerDatos());

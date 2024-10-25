@@ -1,7 +1,7 @@
-<falimia>
-  <persona nombre="Juan">
+<familia>
+  <persona name="Juan">
     <primerApellido>Sanz</primerApellido>
     <segundoApellido>Sanz</segundoApellido>
     <nacimiento>2002-01-19 23:11:00.0 UTC</nacimiento>
   </persona>
-</falimia>
+</familia>
