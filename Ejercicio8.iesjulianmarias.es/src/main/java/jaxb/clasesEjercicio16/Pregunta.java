@@ -6,10 +6,10 @@ import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlType;
 
-@XmlType(propOrder = { "enunciado", "respuesta" })
+@XmlType(propOrder = { "enunciado", "listaRespuesta" })
 public class Pregunta {
-	private String autoria;
 	private String dificultad;
+	private String autoria;
 	private String enunciado;
 	private ArrayList<Respuesta> listaRespuesta;
 
@@ -17,21 +17,12 @@ public class Pregunta {
 
 	}
 
-	public Pregunta(String autoria, String dificultad, String enunciado, ArrayList<Respuesta> respuestas) {
+	public Pregunta(String dificultad, String autoria, String enunciado, ArrayList<Respuesta> listaRespuesta) {
 		super();
-		this.autoria = autoria;
 		this.dificultad = dificultad;
-		this.enunciado = enunciado;
-		this.listaRespuesta = respuestas;
-	}
-
-	@XmlAttribute()
-	public String getAutoria() {
-		return autoria;
-	}
-
-	public void setAutoria(String autoria) {
 		this.autoria = autoria;
+		this.enunciado = enunciado;
+		this.listaRespuesta = listaRespuesta;
 	}
 
 	@XmlAttribute()
@@ -43,6 +34,15 @@ public class Pregunta {
 		this.dificultad = dificultad;
 	}
 
+	@XmlAttribute()
+	public String getAutoria() {
+		return autoria;
+	}
+
+	public void setAutoria(String autoria) {
+		this.autoria = autoria;
+	}
+
 	public String getEnunciado() {
 		return enunciado;
 	}
@@ -52,12 +52,12 @@ public class Pregunta {
 	}
 
 	@XmlElement(name = "respuesta")
-	public ArrayList<Respuesta> getRespuestas() {
+	public ArrayList<Respuesta> getListaRespuesta() {
 		return listaRespuesta;
 	}
 
-	public void setRespuestas(ArrayList<Respuesta> respuestas) {
-		this.listaRespuesta = respuestas;
+	public void setListaRespuesta(ArrayList<Respuesta> listaRespuesta) {
+		this.listaRespuesta = listaRespuesta;
 	}
 
 }
